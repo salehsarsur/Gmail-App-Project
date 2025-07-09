@@ -1,0 +1,316 @@
+.compose-container {
+  background: var(--form-bg);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.compose-title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.compose-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.compose-form label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.compose-form input,
+.compose-form textarea {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: white;
+}
+
+.compose-form textarea {
+  resize: vertical;
+}
+
+.icloud-btn {
+  padding: 12px 20px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.icloud-btn:hover {
+  opacity: 0.85;
+}
+
+.mail-success {
+  color: green;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.mail-error {
+  color: red;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+body.dark-mode .compose-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.4);
+}
+
+body.dark-mode .compose-form input,
+body.dark-mode .compose-form textarea {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+}
+.compose-form {
+  background: var(--form-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.compose-form input,
+.compose-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.send-btn {
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.attachment-preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.thumb {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.thumb button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-primary, .btn-secondary {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #ff5722;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+}
+
+.btn-secondary {
+  background-color: #999;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #777;
+}
+
+.compose-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.compose-form input[type="email"],
+.compose-form input[type="text"],
+.compose-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.compose-form textarea {
+  resize: vertical;
+}
+
+.attachment-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumb {
+  position: relative;
+}
+
+.thumb img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.thumb button {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.error-msg {
+  color: red;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.send-btn {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+.draft-btn {
+  background-color: #999;
+}
+
+.draft-btn:hover {
+  background-color: #777;
+}
+
+body.dark-mode .send-btn {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+body.dark-mode .send-btn:hover {
+  background-color: #1976d2;
+}
+
+body.dark-mode .draft-btn {
+  background-color: #666;
+}
+
+body.dark-mode .draft-btn:hover {
+  background-color: #555;
+}
+
+body.dark-mode .button-group .send-btn {
+  background-color: #42a5f5;
+  color: white;
+}
+
+body.dark-mode .button-group .send-btn:hover {
+  background-color: #1e88e5;
+}
+
+body.dark-mode .button-group .send-btn.draft-btn {
+  background-color: #757575;
+}
+
+body.dark-mode .button-group .send-btn.draft-btn:hover {
+  background-color: #5c5c5c;
+}
+
+body.dark-mode .send-btn:not(.draft-btn) {
+  background-color: #ff5722;
+}
+
+body.dark-mode .send-btn:not(.draft-btn):hover {
+  background-color: #e64a19;
+}
+
+

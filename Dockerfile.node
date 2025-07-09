@@ -1,0 +1,23 @@
+FROM node:18
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Copy package files first for better caching
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+RUN npm install uuid
+RUN npm install multer
+RUN npm install react-icons
+RUN npm install jsonwebtoken
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the app port
+EXPOSE 3000
+
+# Start the app
+CMD ["node", "App.js"]

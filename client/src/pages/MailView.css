@@ -1,0 +1,159 @@
+.mail-view-container {
+  background: var(--form-bg);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mail-view-header h2 {
+  margin-bottom: 12px;
+  color: var(--primary-color);
+}
+
+.mail-view-meta {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.mail-view-date {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.mail-view-body {
+  font-size: 1rem;
+  color: var(--text-color);
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.icloud-btn {
+  padding: 10px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.icloud-btn.secondary {
+  background-color: #888;
+}
+
+.icloud-btn:hover {
+  opacity: 0.85;
+}
+
+.mail-view-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.label-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.assigned-label {
+  background-color: #dfefff;
+  color: #003366;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.remove-label {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+body.dark-mode .assigned-label {
+  background-color: #333;
+  color: #eee;
+}
+
+.assign-label-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.assign-label-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.label-dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+
+.label-dropdown.dark {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dropdown-label {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdown-label:hover {
+  background: #f0f0ff;
+}
+
+.label-dropdown.dark .dropdown-label:hover {
+  background: #444;
+}
+
+body.dark-mode .mail-view-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.4);
+}
+
+body.dark-mode .icloud-btn {
+  background-color: #ff5722;
+}
+
+body.dark-mode .icloud-btn.secondary {
+  background-color: #666;
+}
+
+.sender-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}

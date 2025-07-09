@@ -1,0 +1,205 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+.profile-card h2 {
+  margin-top: 10px;
+}
+
+.profile-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ccc;
+}
+.change-password-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.change-password-section h3 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.change-password-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.change-password-section input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.change-password-section button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007aff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.status-msg {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #007aff;
+}
+.profile-container.dark .profile-card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.change-password-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #555;
+  cursor: pointer;
+}
+
+.profile-card input {
+  background-color: #f8f8f8;
+}
+
+.profile-container.dark .profile-card input {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.name-input {
+  font-size: 1.2rem;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+}
+
+.avatar-label {
+  cursor: pointer;
+}
+
+.status-msg {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #007aff;
+}
+.profile-card .change-password-toggle {
+  margin: 10px 5px 0;
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-container.dark .change-password-toggle {
+  background-color: #1c8cff;
+}
+
+.profile-card .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.status-msg {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile-card button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-card .change-password-toggle {
+  background-color: #007aff;
+  color: white;
+}
+
+.profile-card .cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.profile-container.dark .change-password-toggle {
+  background-color: #ff5722;
+  color: white;
+}
+
+.profile-container.dark .cancel-btn {
+  background-color: transparent;
+  border: 1px solid #888;
+  color: #ccc;
+}
+
+.profile-card .change-password-toggle:hover {
+  background-color: #005fcc;
+}
+
+.profile-container.dark .change-password-toggle:hover {
+  background-color: #e64a19;
+}
+
+.profile-card .cancel-btn:hover {
+  background-color: #ddd;
+  color: #111;
+}
+
+.profile-container.dark .cancel-btn:hover {
+  background-color: #333;
+  color: white;
+  border-color: #aaa;
+}

@@ -1,0 +1,35 @@
+services:
+  bloomserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.Bloom
+    container_name: bloomserver
+    ports:
+      - "12345:12345"
+    networks:
+      - gmailnet
+
+  gmailserver:
+    container_name: gmailserver
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    ports:
+      - "3000:3000"
+    networks:
+      - gmailnet
+
+  client:
+    container_name: gmailclient
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - gmailserver
+    networks:
+      - gmailnet
+
+networks:
+  gmailnet:

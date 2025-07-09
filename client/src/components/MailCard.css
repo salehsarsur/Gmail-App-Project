@@ -1,0 +1,170 @@
+.mail-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+
+.mail-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mail-card.unread {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mail-checkbox {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+.read-status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #007aff;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.mail-card.read .read-status-dot {
+  background-color: #ccc;
+}
+
+body.dark-mode .mail-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.3);
+}
+
+body.dark-mode .mail-card.unread {
+  background: rgba(50, 20, 0, 0.6);
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.5);
+}
+
+body.dark-mode .read-status-dot {
+  background-color: #999;
+}
+
+.mail-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.mail-from {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.mail-body-preview {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.select-all-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 15px 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.select-all-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+body.dark-mode .select-all-toggle label {
+  color: white;
+}
+.flag-icon {
+  font-size: 18px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #aaa;
+}
+
+.flag-icon.flagged {
+  color: orange;
+}
+
+.mail-actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.flag-icon {
+  margin-left: auto;
+  padding: 10px;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.flag-icon:hover {
+  color: orange;
+}
+
+.sender-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  min-width: 180px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  text-align: left;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px 12px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* above image */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px); /* slight move up on hover */
+}
+
+body.dark-mode .tooltip .tooltip-text {
+  background: rgba(50, 20, 0, 0.7);
+  color: var(--text-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 12px rgba(255, 87, 34, 0.5);
+}
